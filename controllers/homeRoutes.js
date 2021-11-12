@@ -107,4 +107,12 @@ router.get("/profile", withAuth, (req, res) => {
   });
 });
 
+//render map
+router.get('/map', (req, res) => {
+  res.render("map")
+  // res.render("map", {
+  //   logged_in: req.session.logged_in,
+  // })
+});
+
 module.exports = router;
